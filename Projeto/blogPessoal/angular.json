@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "blogPessoal"
+  "defaultProject": "blogPessoal",
+  "cli": {
+    "analytics": "8ad3df10-61f8-42bc-98d2-4e87bb9b9e39"
+  }
 }
