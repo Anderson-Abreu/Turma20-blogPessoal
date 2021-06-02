@@ -32,9 +32,20 @@ tipoUsuario: string
   }
 
   cadastrar(){
+
+    if(this.user.nome.length<3){
+      alert('preencha o campo nome com pelo menos 3 caracters')
+    }
+
+    if(this.user.usuario.length<3){
+      alert('preencha o campo usuario com pelo menos 3 caracters')
+    }
+
     this.user.tipo = this.tipoUsuario
 
-    if(this.user.senha != this.confirmarSenha){
+    if(this.user.senha.length<5){
+      alert('preencha o campo senha com pelo menos caracters')
+    }else if(this.user.senha != this.confirmarSenha){
       alert('As senhas estão incorretas!!!')
     }else{
       this.authService.cadastrar(this.user).subscribe((resp:User)=>{
