@@ -44,7 +44,7 @@ tipoUsuario: string
     this.user.tipo = this.tipoUsuario
 
     if(this.user.senha.length<5){
-      alert('preencha o campo senha com pelo menos caracters')
+      alert('preencha o campo senha com pelo menos 5 caracters')
     }else if(this.user.senha != this.confirmarSenha){
       alert('As senhas estão incorretas!!!')
     }else{
